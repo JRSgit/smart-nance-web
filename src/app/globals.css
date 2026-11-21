@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores de Fundo */
+  --color-bg-main: #18181B;
+  --color-bg-card: #121214;
+  --color-bg-input: #27272A;
+  --color-bg-light: #F4F4F5;
+
+  /* Cores da Marca (Babilônia) */
+  --color-gold: #E5B83B;
+  --color-gold-hover: #D4A62A;
+  --color-gold-muted: #332B14;
+  --color-coral: #E06C65;
+
+  /* Textos e Bordas */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9CA3AF;
+  --color-border-subtle: #2E2E32;
+
+  --font-display: var(--font-cinzel), serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+/* Aplica a fonte clássica babilônica automaticamente nos títulos principais */
+h1, h2 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
